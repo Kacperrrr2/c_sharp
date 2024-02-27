@@ -1,0 +1,56 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Nadaj Przesyłkę" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Rodzaj przesyłki" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <StackPanel>
+                <RadioButton Margin="5 5 5 5" Name="Pocztowka" IsChecked="True" Content="Pocztowka"/>
+                <RadioButton Margin="5 5 5 5" Name="List"  Content="List"/>
+                <RadioButton Margin="5 5 5 5" Name="Paczka"  Content="Paczka"/>
+            </StackPanel>
+        </GroupBox>
+        <Button Content="Sprawdż cene" Click="Button_Click_Cena" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" />
+        <Image Name="ListZdj" Source="/list.png" Grid.Column="0" Grid.Row="3" Visibility="Collapsed" />
+        <Image Name="PocztowkaZdj" Source="/pocztowka.png" Grid.Column="0" Grid.Row="3" Visibility="Visible" />
+        <Image Name="PaczkaZdj" Source="/paczka.png" Grid.Column="0" Grid.Row="3" Visibility="Collapsed" />
+        <TextBlock Name="Cena" FontWeight="Bold" Grid.Row="3" Grid.Column="1" Text="Cena:"/>
+         
+        <GroupBox Header="Dane adresowe" Grid.Row="0" Grid.Column="3" Grid.RowSpan="5" Grid.ColumnSpan="5">
+            <StackPanel>
+                <TextBlock Margin="5 5 5 5" Text="imie i nazwisko"/>
+                <TextBox Margin="5 5 5 5" />
+                <TextBlock Margin="5 5 5 5" Text="Kod pocztowy"/>
+                <TextBox Margin="5 5 5 5" Name="textBoxKodPocztowy"/>
+                <TextBlock Margin="5 5 5 5" Text="Miasto"/>
+                <TextBox Margin="5 5 5 5" />
+                
+
+            </StackPanel>
+        </GroupBox>
+
+        <Button Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" Click="buttonZatwierdzanie_Click" Content="Zatwierdz"/>
+
+    </Grid>
+</Window>
