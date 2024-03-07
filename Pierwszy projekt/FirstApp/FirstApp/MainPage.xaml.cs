@@ -28,13 +28,13 @@ namespace FirstApp
                 return;
             }
 
-            if(!password1.Text.Contains(password2.Text)) 
+            if(password1.Text!=password2.Text) 
             {
                 Wyswietl.Text = "Hasła się różnią";
                 return;
             }
-            
-            if(password1.Text.Contains(password2.Text))
+
+            if (password1.Text ==password2.Text)
             {
                 Wyswietl.Text = "Witaj " + mail.Text;
                 return;
