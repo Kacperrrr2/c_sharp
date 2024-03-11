@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamApp.Register">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#008080" Padding="24" CornerRadius="0">
+                <Label Text="Logowanie"  TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Label Text="Login" FontSize="Title" Padding="30,10,30,10"/>
+            <Entry  x:Name="login"/>
+            <Label  Text="Podaj hasło" FontSize="Title" Padding="30,10,30,10"/>
+            <Entry x:Name="password" IsPassword="True"/>
+            <Label  Text="Powtórz hasło" FontSize="Title" Padding="30,10,30,10"/>
+            <Entry x:Name="passwordreapet" IsPassword="True"/>
+            <Button Clicked="Button_Clicked" HorizontalOptions="Center" Text="REJESTRACJA"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
