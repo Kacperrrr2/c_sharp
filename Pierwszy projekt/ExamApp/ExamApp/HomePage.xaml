@@ -7,6 +7,8 @@
             <Label Text="Główna"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Clicked="Button_Clicked" Text="Lista"/>
+            <Button Clicked="Button_Clicked_1" Text="Info"/>
             
         </StackLayout>
     </ContentPage.Content>
