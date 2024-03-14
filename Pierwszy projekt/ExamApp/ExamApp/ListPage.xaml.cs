@@ -13,23 +13,20 @@ namespace ExamApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ListPage : ContentPage
 	{
-		
-       
+
+        private ObservableCollection<string> items = new ObservableCollection<string>();
         public ListPage()
         {
-
+           
             InitializeComponent();
-        }
 
-        public ListPage(ObservableCollection<string> item)
-        {
-            InitializeComponent();
-            List.ItemsSource = item;
+            List.ItemsSource = items;
+
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-			Navigation.PushAsync(new AddPage());
+			Navigation.PushAsync(new AddPage(items));
         }
     }
 }
