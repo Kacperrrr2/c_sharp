@@ -18,6 +18,7 @@ namespace ExamApp
         {
             _login = login;
             InitializeComponent();
+
         }
 
         private void Button_Clicked(object sender, EventArgs e)

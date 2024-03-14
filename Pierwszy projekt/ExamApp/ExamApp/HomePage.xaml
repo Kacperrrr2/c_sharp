@@ -4,7 +4,7 @@
              x:Class="ExamApp.HomePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Główna"
+            <Label Text="Witamy na stronie głownej"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Button Clicked="Button_Clicked" Text="Lista"/>

@@ -4,13 +4,13 @@
              x:Class="ExamApp.ListPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Oto twoja lista!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <ListView x:Name="List">
                 
             </ListView>
-            <Button Clicked="Button_Clicked"/>
+            <Button Text="Dodaj przedmiot na swoja Liste" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
