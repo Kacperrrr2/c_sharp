@@ -9,11 +9,11 @@ using Xamarin.Forms;
 
 namespace ExamApp
 {
-    public partial class MainPage : ContentPage
+    public partial class LoginPage : ContentPage
     {
         private List<User> PersonData;
 
-        public MainPage()
+        public LoginPage()
         {
             InitializeComponent();
             PersonData = new List<User>();
