@@ -4,7 +4,7 @@
              x:Class="TappedApp.FirstPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to FirstPage"
+            <Label Text="Welcome to FirstPage!"
             VerticalOptions="CenterAndExpand" 
             HorizontalOptions="CenterAndExpand" />
             <Entry/>

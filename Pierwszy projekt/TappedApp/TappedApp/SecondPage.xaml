@@ -4,7 +4,7 @@
              x:Class="TappedApp.SecondPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to SecondPage"
+            <Label Text="Welcome to SecondPage!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Entry/>
