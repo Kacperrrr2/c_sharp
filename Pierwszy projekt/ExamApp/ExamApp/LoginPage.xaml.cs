@@ -37,5 +37,7 @@ namespace ExamApp
         {
             Navigation.PushAsync(new Register(PersonData));
         }
+
+       
     }
 }
